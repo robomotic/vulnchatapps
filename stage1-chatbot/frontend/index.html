@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaCare Online Pharmacy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold">PharmaCare</h1>
+                <p class="lead">Your trusted online pharmacy for prescription and over-the-counter medicines.</p>
+            </div>
+        </div>
+        <div class="row align-items-center mb-5">
+            <div class="col-md-7">
+                <h2 class="fw-bold mb-3">Order Medicines Online, Delivered to Your Doorstep</h2>
+                <p class="mb-4">Browse our wide range of health products, upload prescriptions, and get expert advice from our pharmacists.</p>
+                <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="https://images.unsplash.com/photo-1588776814546-ec7e1b1b1b1b?auto=format&fit=crop&w=400&q=80" alt="Pharmacy" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Fast Delivery</h5>
+                        <p class="card-text">Get your medicines delivered within 24 hours in most cities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Certified Pharmacists</h5>
+                        <p class="card-text">Our team is available to answer your health questions and review prescriptions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <div class="card h-100 shadow-sm mb-0">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Secure Payments</h5>
+                        <p class="card-text">Pay safely with credit card, PayPal, or insurance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chatbot widget moved outside the grid/container for fixed bottom anchoring -->
+    <div class="chatbot-widget shadow">
+        <div class="chat-header bg-primary text-white d-flex align-items-center p-2">
+            <span class="me-2 fs-4">💬</span>
+            <h2 class="fs-5 mb-0">PharmaCare Assistant</h2>
+        </div>
+        <div class="chat-messages flex-grow-1" id="chat-messages">
+            <div class="message assistant">
+                <div class="message-content">
+                    Hello! I'm PharmaCare's virtual assistant. How can I help you today?
+                </div>
+            </div>
+        </div>
+        <div class="chat-input d-flex p-2 border-top bg-white">
+            <input type="text" id="user-input" class="form-control me-2 fs-5" placeholder="Type your message...">
+            <button id="send-button" class="btn btn-primary">Send</button>
+            <button id="clear-button" class="btn btn-outline-secondary ms-2" title="Clear chat" type="button">Clear</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- Bootstrap JS (optional, for interactivity) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
